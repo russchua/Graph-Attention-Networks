@@ -1,9 +1,10 @@
 # Graph-Attention-Networks-GAT-
-This is a Keras implementation of the Graph Attention Network (GAT) model by Veličković et al. (2017, [[arXiv link]](https://arxiv.org/abs/1710.10903)).
+This is a Tensorflow 2.0 implementation of the Graph Attention Network (GAT) model by Veličković et al. (2017, [[arXiv link]](https://arxiv.org/abs/1710.10903)).
 
 ## Acknowledgements
-I have no affiliation with the authors of the paper and I am implementing this code for non-commercial reasons.  
-The authors published their [reference Tensorflow implementation here](https://github.com/PetarV-/GAT), so check it out for something that is guaranteed to work as intended. Their implementation is slightly different than mine, so that may be something to keep in mind.
+I have no affiliation with the authors of the paper and I am implementing this code for non-commercial, educational purposes.  
+The authors published their [reference Tensorflow implementation here](https://github.com/PetarV-/GAT), so check it out for something that is guaranteed to work as intended. 
+
 You should cite the paper if you use any of this code for your research:
 ```
 @article{
@@ -16,11 +17,8 @@ You should cite the paper if you use any of this code for your research:
   note={Accepted as poster},
 }
 ```
-If you would like to give me credit, feel free to link to my [Github profile](https://github.com/danielegrattarola), [blog](https://danielegrattarola.github.io), or [Twitter](https://twitter.com/riceasphait).
 
-I also copied the code in `utils.py` almost verbatim from [this repo by Thomas Kipf](https://github.com/tkipf/gcn), who I thank sincerely for sharing his work on GCNs and GAEs, and for giving me a few pointers on how to split the data into train/test/val sets.
-
-Thanks to [mawright](https://github.com/mawright), [matthias-samwald](https://github.com/matthias-samwald), and [vermaMachineLearning](https://github.com/vermaMachineLearning) for helping me out with bugs, performance improvements, and running experiments.
+I also copied the code in `utils.py` almost verbatim from [this repo by Thomas Kipf](https://github.com/tkipf/gcn), who I thank sincerely for sharing his work on GCNs and GAEs.
 
 ## Disclaimer
 I do not own any rights to the datasets distributed with this code, but they are publicly available at the following links:
@@ -29,21 +27,7 @@ I do not own any rights to the datasets distributed with this code, but they are
 - PubMed: [https://catalog.data.gov/dataset/pubmed](https://catalog.data.gov/dataset/pubmed)
 - CiteSeer: [http://csxstatic.ist.psu.edu/about/data](http://csxstatic.ist.psu.edu/about/data)
 
-## Installation
-To install as a module:
-```
-$ git clone https://github.com/danielegrattarola/keras-gat.git
-$ cd keras-gat
-$ pip install .
-$ python
->>> from keras_gat import GraphAttention
-```
+## Previewing
+Run Tensorflow_2_0_Graph_Attention_Networks_(GAT).ipynb
 
-Or you can just copy and paste `graph_attention_layer.py` into your project.
-
-## Replicating experiments
-To replicate the experimental results of the paper, simply run:
-```sh
-$ python examples/gat.py
-```
-
+In the colab sheet, you can choose to run different datasets and modify the training properties of the Graph Attention Networks
