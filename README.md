@@ -1,4 +1,4 @@
-# Graph-Attention-Networks-GAT-
+# Graph-Attention-Networks-GAT
 This is a Tensorflow 2.0 implementation of the Graph Attention Network (GAT) model by Veličković et al. (2017, [[arXiv link]](https://arxiv.org/abs/1710.10903)).
 
 ## Acknowledgements
